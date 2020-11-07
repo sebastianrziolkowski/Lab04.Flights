@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "H9CbNFw+kyrcGA/SJIpJlJnP/zPHxZLLMpArcMqLibRo7tGhImIQczppt0ZYG6xankmzHw5mg7lfkSUHzkoa4Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SebastianZiółkowski\\source\\repos\\KontrolaLotow\\Dane\\Dane.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SebastianZiółkowski\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\SebastianZiółkowski\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

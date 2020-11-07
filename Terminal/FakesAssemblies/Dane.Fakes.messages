@@ -1,0 +1,10 @@
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Terminal\Fakes\Dane.fakes : warning : Nie można wygenerować klasy zastępczej dla Dane.System.SystemKontroliLotow: typ nie jest widoczny dla exported or assembly(Dane.Fakes).
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Terminal\Fakes\Dane.fakes : warning : Nie można wygenerować klasy zastępczej dla Dane.Model.Miasto: typ nie jest widoczny dla exported or assembly(Dane.Fakes).
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Terminal\Fakes\Dane.fakes : warning : Nie można wygenerować klasy zastępczej dla Dane.Model.Polozenie: typ nie jest widoczny dla exported or assembly(Dane.Fakes).
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Terminal\Fakes\Dane.fakes : warning : Nie można wygenerować klasy zastępczej dla Dane.Model.Samolot: typ nie jest widoczny dla exported or assembly(Dane.Fakes).
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Terminal\Fakes\Dane.fakes : warning : Nie można wygenerować klasy zastępczej dla Dane.Baza.Repozytorium: typ nie jest widoczny dla exported or assembly(Dane.Fakes).
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Terminal\Fakes\Dane.fakes : warning : Nie można wygenerować podkładki dla Dane.System.SystemKontroliLotow: typ nie jest widoczny dla exported or assembly(Dane.Fakes).
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Terminal\Fakes\Dane.fakes : warning : Nie można wygenerować podkładki dla Dane.Model.Miasto: typ nie jest widoczny dla exported or assembly(Dane.Fakes).
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Terminal\Fakes\Dane.fakes : warning : Nie można wygenerować podkładki dla Dane.Model.Polozenie: typ nie jest widoczny dla exported or assembly(Dane.Fakes).
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Terminal\Fakes\Dane.fakes : warning : Nie można wygenerować podkładki dla Dane.Model.Samolot: typ nie jest widoczny dla exported or assembly(Dane.Fakes).
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Terminal\Fakes\Dane.fakes : warning : Nie można wygenerować podkładki dla Dane.Baza.Repozytorium: typ nie jest widoczny dla exported or assembly(Dane.Fakes).

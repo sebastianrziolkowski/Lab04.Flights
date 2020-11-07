@@ -1,0 +1,9 @@
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Dane\bin\Debug\netstandard2.0\Dane.deps.json
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Dane\bin\Debug\netstandard2.0\Dane.dll
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Dane\bin\Debug\netstandard2.0\Dane.pdb
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Dane\obj\Debug\netstandard2.0\Dane.csprojAssemblyReference.cache
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Dane\obj\Debug\netstandard2.0\Dane.AssemblyInfoInputs.cache
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Dane\obj\Debug\netstandard2.0\Dane.AssemblyInfo.cs
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Dane\obj\Debug\netstandard2.0\Dane.csproj.CoreCompileInputs.cache
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Dane\obj\Debug\netstandard2.0\Dane.dll
+C:\Users\SebastianZiółkowski\source\repos\KontrolaLotow\Dane\obj\Debug\netstandard2.0\Dane.pdb
