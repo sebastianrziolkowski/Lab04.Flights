@@ -6,76 +6,69 @@ namespace Dane.Model
 {
     public class Samolot
     {
-        private Polozenie Pozycja;
-        private Miasto MiastoWylot;
-        private Miasto MiastoCel;
-        private string Identyfikator;
-        public double Predkosc;
+        private Polozenie pozycja;
+        private Miasto miastoWylot;
+        private Miasto miastoCel;
+        private string identyfikator;
+        public double predkosc;
 
-
-
-        public Samolot()
+        public Samolot(string _identyfikator, Polozenie polozenie)
         {
-            Pozycja = new Polozenie(0,0);
-        }
-
-        public Samolot(string identyfikator, double x, double y)
-        {
-            Identyfikator = identyfikator;
-            Pozycja = new Polozenie(x, y);
+            identyfikator = _identyfikator;
+            pozycja = polozenie;
 
         }
 
-        public Samolot(string identyfikator, double predkosc)
+        public Samolot(string _identyfikator, double predkosc)
         {
-            Identyfikator = identyfikator;
-            Predkosc = predkosc;
-            Pozycja = new Polozenie(new double(), new double());
-            MiastoWylot = new Miasto();
-            MiastoCel = new Miasto() ;
+            identyfikator = _identyfikator;
+            this.predkosc = predkosc;
+            //pozycja = new Polozenie(new double(), new double());
+           // miastoWylot = new Miasto();
+            //miastoCel = new Miasto() ;
          }
         
-        public Samolot(string identyfikator, double predkosc, Miasto miastoWylotu)
+        public Samolot(string _identyfikator, double predkosc, Miasto miastoWylotu)
         {
-            Identyfikator = identyfikator;
-            Predkosc = predkosc;
-            MiastoWylot = miastoWylotu;
-            MiastoCel = new Miasto();
-            Pozycja = new Polozenie(MiastoWylot.PolozenieM.x, MiastoWylot.PolozenieM.y);
+            identyfikator = _identyfikator;
+            this.predkosc = predkosc;
+            miastoWylot = miastoWylotu;
+            pozycja = new Polozenie(miastoWylot.PolozenieM.X, miastoWylot.PolozenieM.Y);
+           // miastoCel = new Miasto();
 
         }
 
-        public string identyfikator
+        public string Identyfikator
         {
-            set { Identyfikator = value; }
-            get { return Identyfikator; }    // Brak spojnosci z PDF-em
+            set { identyfikator = value; }
+            get { return identyfikator; }   
         }
 
-        public Miasto getMiastoWylot()  // Brak spojnosci z PDF-em
+        public Miasto GetMiastoWylot()
         {
-            return MiastoWylot;
-        }
-
-
-        public Miasto getMiastoCel()   // Brak spojnosci z PDF-em
-        {
-            return MiastoCel;
-        }
-
-        public void setMiastoCel(Miasto _miasto)   // Brak spojnosci z PDF-em
-        {
-            MiastoCel = _miasto;
+            return miastoWylot;
         }
 
 
-        public Polozenie getPozycja()   // Brak spojnosci z PDF-em
+        public Miasto GetMiastoCel()
         {
-            return Pozycja;
+            return miastoCel;
         }
 
-        public void setPozycja(double _x, double _y)   // Brak spojnosci z PDF-em
+        public void SetMiastoCel(Miasto _miasto)
         {
-            Pozycja.Zmien(_x, _y);
+            miastoCel = _miasto;
+        }
+
+
+        public Polozenie GetPozycja()
+        {
+            return pozycja;
+        }
+
+        public void SetPozycja(double _x, double _y)
+        {
+            pozycja.Zmien(_x, _y);
         }
     }
 }

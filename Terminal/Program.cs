@@ -29,7 +29,7 @@ namespace Terminal
             Miasto miasto = repo.WezMiasto("Krakow");
             Miasto miasto2 = repo.WezMiasto("Seattle");
             Samolot samolot = repo.WezSamolot(miasto);
-            samolot.setMiastoCel(miasto2);
+            samolot.SetMiastoCel(miasto2);
 
             systemKontroliLotow.SetSamolot(samolot);
             systemKontroliLotow.EkranObecnegoStanu();

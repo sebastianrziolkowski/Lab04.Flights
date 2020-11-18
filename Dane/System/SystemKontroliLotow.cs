@@ -16,7 +16,7 @@ namespace Dane.System
 
         public void SetSamolot(Samolot _samolot)
         {
-            Console.WriteLine("Zarejestrowano " + _samolot.identyfikator);
+            Console.WriteLine("Zarejestrowano " + _samolot.Identyfikator);
             sledzonySamolot = _samolot;
         }
 
@@ -27,11 +27,11 @@ namespace Dane.System
            "Identyfikator", "Poz. X", "Poz. Y", "Wylecial z", "Leci do", "Dotrze o");
 
             Console.WriteLine("{0,15} {1,8} {2,8} {3,12} {4,12} {5,10:t}",
-            sledzonySamolot.identyfikator,
-            sledzonySamolot.getPozycja().x,
-            sledzonySamolot.getPozycja().y,
-            sledzonySamolot.getMiastoWylot() != null ? sledzonySamolot.getMiastoWylot().Nazwa : new Miasto().Nazwa,
-            sledzonySamolot.getMiastoCel() != null ? sledzonySamolot.getMiastoCel().Nazwa : new Miasto().Nazwa,
+            sledzonySamolot.Identyfikator,
+            sledzonySamolot.GetPozycja().X,
+            sledzonySamolot.GetPozycja().Y,
+            sledzonySamolot.GetMiastoWylot() != null ? sledzonySamolot.GetMiastoWylot().Nazwa : new Miasto().Nazwa,
+            sledzonySamolot.GetMiastoCel() != null ? sledzonySamolot.GetMiastoCel().Nazwa : new Miasto().Nazwa,
             Narzedzia.SzacujCzasDotarcia(sledzonySamolot));
         }
     }

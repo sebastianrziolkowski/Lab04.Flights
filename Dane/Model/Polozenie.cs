@@ -6,8 +6,8 @@ namespace Dane.Model
 {
     public class Polozenie
     {
-        public double x;
-        public double y;
+        private double x;
+        private double y;
 
         public Polozenie(double _x, double _y)
         {
@@ -19,6 +19,17 @@ namespace Dane.Model
         {
             x = _x;
             y = _y;
+        }
+
+        public double X
+        {
+            get => x;
+            set => x = value;
+        }
+        public double Y
+        {
+            get => y;
+            set => y = value;
         }
     }
 }

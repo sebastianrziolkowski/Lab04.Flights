@@ -30,9 +30,7 @@ namespace Dane.Baza
 
         public Samolot WezSamolot()
         {
-            Samolot samolot = new Samolot();
-            samolot.identyfikator = "Lot 94124";
-            samolot.setPozycja(131,2255);
+            Samolot samolot = new Samolot("Lot 94124", new Polozenie(131.0, 2255.0));
             return samolot;
         }
 

@@ -22,15 +22,15 @@ namespace Dane.System
 
         public static double PoliczOdleglosc(Polozenie a, Polozenie b)
         {
-            return Math.Abs(Math.Sqrt(Math.Pow((b.x - a.x), 2) + (Math.Cos((a.x * Math.PI) / 180) * Math.Pow((b.y - a.y), 2))));
+            return Math.Sqrt(Math.Pow((b.X - a.X), 2) * Math.Pow((b.Y - a.Y), 2));
           
         }
 
         public static String SzacujCzasDotarcia(Samolot samolot)
         {
 
-            double odleglosc = PoliczOdleglosc(samolot.getPozycja(), samolot.getMiastoCel().PolozenieM);
-            double predkosc = samolot.Predkosc;
+            double odleglosc = PoliczOdleglosc(samolot.GetPozycja(), samolot.GetMiastoCel().PolozenieM);
+            double predkosc = samolot.predkosc;
             if(double.IsNaN(odleglosc) || double.IsNaN(predkosc)){
                 return DateTime.Now.ToString();
             }
