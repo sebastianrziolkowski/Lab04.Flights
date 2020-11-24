@@ -32,10 +32,10 @@ namespace Dane.System
             double odleglosc = PoliczOdleglosc(samolot.GetPozycja(), samolot.GetMiastoCel().PolozenieM);
             double predkosc = samolot.predkosc;
             if(double.IsNaN(odleglosc) || double.IsNaN(predkosc)){
-                return DateTime.Now.ToString();
+                return DateTime.Now.ToString("hh:mm tt");
             }
             else
-                return DateTime.Now.AddMinutes((odleglosc / predkosc) * 60).ToString();
+                return DateTime.Now.AddMinutes((odleglosc / predkosc) * 60).ToString("hh:mm tt");
         }
     }
 }

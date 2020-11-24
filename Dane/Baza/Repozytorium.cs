@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 using Dane.Model;
+using Dane.Model.Samoloty;
 using Dane.System;
 
 namespace Dane.Baza
@@ -37,6 +38,20 @@ namespace Dane.Baza
         public Samolot WezSamolot(Miasto miastoWylotu)
         {
             return new Samolot("Lot 23513", 900, miastoWylotu);
+        }
+
+        public Samolot WezSamolot(int _iloscMiejsc, int _iloscPasazerow)
+        {
+            SamolotPasazerski samolotPasazerski = new SamolotPasazerski("Lot 33441", 870, _iloscMiejsc);
+            samolotPasazerski.IloscPasazerow = _iloscPasazerow;
+            return samolotPasazerski;
+        }
+
+        public Samolot WezSamolot(Miasto _miastoWylotu, double _maksymalnaWaga, double _wagaLadunku)
+        {
+            SamolotTowarowy samolotTowarowy = new SamolotTowarowy("Lot 51314", 680, _miastoWylotu, _maksymalnaWaga);
+            samolotTowarowy.WagaLadunku = _wagaLadunku;
+            return samolotTowarowy;
         }
     }
 }

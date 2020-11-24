@@ -22,7 +22,6 @@ namespace Terminal
             systemKontroliLotow.SetSamolot(samolot);
             systemKontroliLotow.EkranObecnegoStanu();
             Console.ReadLine();
-            */
 
             SystemKontroliLotow systemKontroliLotow = new SystemKontroliLotow();
             Repozytorium repo = new Repozytorium();
@@ -33,6 +32,27 @@ namespace Terminal
 
             systemKontroliLotow.SetSamolot(samolot);
             systemKontroliLotow.EkranObecnegoStanu();
+                        */
+
+
+            SystemKontroliLotow systemKontroliLotow = new SystemKontroliLotow();
+            Repozytorium repo = new Repozytorium();
+
+            Miasto miastoGdansk = repo.WezMiasto("Gdansk");
+            Miasto miastoNowyYork = repo.WezMiasto("Nowy York");
+
+            Samolot samolot = repo.WezSamolot(200, 140);
+            samolot.SetMiastoCel(miastoNowyYork);
+            samolot.SetMiastoWylot(miastoGdansk);
+
+            systemKontroliLotow.SetSamolot(samolot);
+            systemKontroliLotow.EkranObecnegoStanu();
+
+            Samolot samolot1 = repo.WezSamolot(repo.WezMiasto("Nowy York"), 3000, 2500);
+            samolot1.SetMiastoCel(miastoGdansk);
+            systemKontroliLotow.SetSamolot(samolot1);
+            systemKontroliLotow.EkranObecnegoStanu();
+
             Console.ReadLine();
         }
     }

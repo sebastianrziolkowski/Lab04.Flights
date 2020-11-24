@@ -12,6 +12,7 @@ namespace Dane.Model
         private string identyfikator;
         public double predkosc;
 
+
         public Samolot(string _identyfikator, Polozenie polozenie)
         {
             identyfikator = _identyfikator;
@@ -49,6 +50,11 @@ namespace Dane.Model
             return miastoWylot;
         }
 
+        public void SetMiastoWylot(Miasto _miasto)
+        {
+            miastoWylot = _miasto;
+        }
+
 
         public Miasto GetMiastoCel()
         {
@@ -69,6 +75,16 @@ namespace Dane.Model
         public void SetPozycja(double _x, double _y)
         {
             pozycja.Zmien(_x, _y);
+        }
+
+        virtual public string Ladunek()
+        {
+            return "Brak";
+        }
+
+        virtual public string Rodzaj
+        {
+            get => "S";
         }
     }
 }
