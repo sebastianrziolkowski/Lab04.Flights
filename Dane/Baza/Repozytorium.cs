@@ -29,6 +29,8 @@ namespace Dane.Baza
             return miasto;
         }
 
+
+        /*
         public Samolot WezSamolot()
         {
             Samolot samolot = new Samolot("Lot 94124", new Polozenie(131.0, 2255.0));
@@ -39,6 +41,7 @@ namespace Dane.Baza
         {
             return new Samolot("Lot 23513", 900, miastoWylotu);
         }
+        */
 
         public Samolot WezSamolot(int _iloscMiejsc, int _iloscPasazerow)
         {

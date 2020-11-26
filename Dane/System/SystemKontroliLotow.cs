@@ -5,7 +5,7 @@ using Dane.Model;
 
 namespace Dane.System
 {
-    public class SystemKontroliLotow
+    public class SystemKontroliLotow : ISystemKontroliLotow
     {
         public Samolot sledzonySamolot;
 
@@ -50,6 +50,24 @@ namespace Dane.System
             sledzonySamolot.GetMiastoWylot() != null ? sledzonySamolot.GetMiastoWylot().Nazwa : new Miasto().Nazwa,
             sledzonySamolot.GetMiastoCel() != null ? sledzonySamolot.GetMiastoCel().Nazwa : new Miasto().Nazwa,
             sledzonySamolot.GetPozycja() != null ? Narzedzia.SzacujCzasDotarcia(sledzonySamolot) : DateTime.Now.ToString("hh:mm tt"));
+        }
+
+        public void ZarejestrujSamolot(Samolot samolot)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void PokazWidok(Widok widok)
+        {
+            switch (widok)
+            {
+                case Widok.ListaSamolotow:
+                    EkranObecnegoStanu();
+                    break;
+                default:
+                    Console.WriteLine("Niepoprawny widok");
+                    break;
+            }
         }
     }
 }

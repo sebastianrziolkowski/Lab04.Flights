@@ -46,12 +46,12 @@ namespace Terminal
             samolot.SetMiastoWylot(miastoGdansk);
 
             systemKontroliLotow.SetSamolot(samolot);
-            systemKontroliLotow.EkranObecnegoStanu();
+            systemKontroliLotow.PokazWidok(Widok.ListaSamolotow);
 
             Samolot samolot1 = repo.WezSamolot(repo.WezMiasto("Nowy York"), 3000, 2500);
             samolot1.SetMiastoCel(miastoGdansk);
             systemKontroliLotow.SetSamolot(samolot1);
-            systemKontroliLotow.EkranObecnegoStanu();
+            systemKontroliLotow.PokazWidok(Widok.ListaSamolotow);
 
             Console.ReadLine();
         }

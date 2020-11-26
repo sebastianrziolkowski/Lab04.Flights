@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Dane.Model
 {
-    public class Samolot
+    public abstract class Samolot
     {
         private Polozenie pozycja;
         private Miasto miastoWylot;
@@ -77,14 +77,11 @@ namespace Dane.Model
             pozycja.Zmien(_x, _y);
         }
 
-        virtual public string Ladunek()
-        {
-            return "Brak";
-        }
+        public abstract string Ladunek();
 
-        virtual public string Rodzaj
+        public abstract string Rodzaj
         {
-            get => "S";
+            get;
         }
     }
 }
